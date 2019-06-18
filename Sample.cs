@@ -44,7 +44,7 @@ namespace ConsoleApp1
         public static void Main(string [] args)
         {
             Demo sap = new Sample();
-            sap.Print1();
+            sap.Print();
             sap.Display();
             sap.View1();
         }
