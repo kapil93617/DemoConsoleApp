@@ -4,6 +4,13 @@ using System.Text;
 
 namespace ConsoleApp1
 {
+    class Demo
+    {
+        public void Display()
+        {
+            Console.WriteLine(hello);
+        }
+    }
     class Sample
     {
         public void print()
@@ -20,4 +27,6 @@ namespace ConsoleApp1
             sap.print();
         }
     }
+
+
 }
