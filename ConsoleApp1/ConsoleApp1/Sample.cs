@@ -4,18 +4,38 @@ using System.Text;
 
 namespace ConsoleApp1
 {
-    class Demo
+    interface I1
     {
+        void View();
+    }
+    interface I2
+    {
+        void View();
+    }
+    class Demo:I1
+    {
+        public void View()
+        {
+            Console.WriteLine("Interfaec I1 Method");
+        }
+        public void View1()
+        {
+            Console.WriteLine("Demo class Method");
+        }
         public void Display()
         {
-            Console.WriteLine(hello);
+            Console.WriteLine("Demo class hello Demo");
+        }
+        public virtual void Print()
+        {
+            Console.WriteLine("Sample class hello");
         }
     }
-    class Sample
+    class Sample: Demo
     {
-        public void print()
+        public override void Print()
         {
-            Console.WriteLine("hello");
+            Console.WriteLine("Sample class hello");
         }
     }
 
@@ -23,8 +43,10 @@ namespace ConsoleApp1
     {
         public static void Main(string [] args)
         {
-            Sample sap = new Sample();
-            sap.print();
+            Demo sap = new Sample();
+            sap.Print();
+            sap.Display();
+            sap.View1();
         }
     }
 
