@@ -35,7 +35,7 @@ namespace ConsoleApp1
     {
         public override void Print()
         {
-            Console.WriteLine("Sample class hello");
+            Console.WriteLine(Sample class hello);
         }
     }
 
