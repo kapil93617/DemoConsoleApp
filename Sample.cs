@@ -56,6 +56,7 @@ namespace ConsoleApp1
             sap.Print();
             sap.Display();
             sap.View1();
+            sap.View2();
         }
     }
 
