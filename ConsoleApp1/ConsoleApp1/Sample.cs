@@ -12,7 +12,7 @@ namespace ConsoleApp1
     {
         void View();
     }
-    class Demo:I1
+    class Demo : I1
     {
         public void View()
         {
@@ -31,14 +31,12 @@ namespace ConsoleApp1
             Console.WriteLine("Sample class hello");
         }
     }
-    //class Sample: Demo
-    //{
-    //    public override void Print()
-    //    {
-    //        Console.WriteLine(Sample class hello);
-    //    }
-    //}
-
+    class Sample : Demo
+    {
+        public override void Print()
+        {
+            Console.WriteLine(Sample class hello);
+        }
     class Sample : Demo
     {
         public override void Print()
@@ -47,18 +45,21 @@ namespace ConsoleApp1
         }
     }
 
+}
 
-    class program
+
+
+class program
+{
+    public static void Main(string[] args)
     {
-        public static void Main(string [] args)
-        {
-            Demo sap = new Sample();
-            sap.Print();
-            sap.Display();
-            sap.View1();
-       //     sap.View2();
-        }
+        Demo sap = new Sample();
+        sap.Print();
+        sap.Display();
+        sap.View1();
+        //     sap.View2();
     }
+}
 
 
 }
