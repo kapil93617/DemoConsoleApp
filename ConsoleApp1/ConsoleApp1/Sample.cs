@@ -31,13 +31,22 @@ namespace ConsoleApp1
             Console.WriteLine("Sample class hello");
         }
     }
-    class Sample: Demo
+    //class Sample: Demo
+    //{
+    //    public override void Print()
+    //    {
+    //        Console.WriteLine(Sample class hello);
+    //    }
+    //}
+
+    class Sample : Demo
     {
         public override void Print()
         {
             Console.WriteLine("Sample class hello");
         }
     }
+
 
     class program
     {
@@ -47,6 +56,7 @@ namespace ConsoleApp1
             sap.Print();
             sap.Display();
             sap.View1();
+       //     sap.View2();
         }
     }
 
