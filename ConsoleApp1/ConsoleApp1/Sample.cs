@@ -35,15 +35,9 @@ namespace ConsoleApp1
     {
         public override void Print()
         {
-            Console.WriteLine(Sample class hello);
-        }
-    class Sample : Demo
-    {
-        public override void Print()
-        {
             Console.WriteLine("Sample class hello");
         }
-    }
+    
 
 }
 
